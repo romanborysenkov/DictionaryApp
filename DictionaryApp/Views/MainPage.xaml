@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:DictionaryApp.ViewModels"
+    x:DataType="viewmodels:MainViewModel"
+    
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+
+    xmlns:model="clr-namespace:DictionaryApp.Models"
+    NavigationPage.HasNavigationBar="False"
+    Shell.FlyoutBehavior="Disabled"
+    x:Class="DictionaryApp.Views.MainPage"
+    xmlns:pages="clr-namespace:DictionaryApp.Views"
+    BackgroundColor="Black">
+
+
+
+     <ContentPage.BindingContext>
+        <viewmodels:MainViewModel/>
+    </ContentPage.BindingContext>
+
+    <ScrollView Margin="0,20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout>
+
+            <Label Margin="20,-10" TextColor="White" FontAttributes="Bold" FontSize="32" Text="Dictionary"/>
+
+           <yummy:PancakeView  Margin="0,20,0,0"
+                Padding="30,0,30,30"
+                               HeightRequest="1000"
+                BackgroundColor="White"
+                CornerRadius="40,40,0,0"
+                VerticalOptions="FillAndExpand">
+                <StackLayout>
+                    <Grid Margin="5,15" ColumnSpacing="20" RowSpacing="30">
+                         <Grid.RowDefinitions>
+                            <RowDefinition Height="130" />
+                            <RowDefinition Height="130" />
+                          
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                          
+                        </Grid.ColumnDefinitions>
+
+                           <yummy:PancakeView
+                             
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Padding="10"
+                            BackgroundColor="White"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                            <StackLayout>
+                              
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="18"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    Text="All words"
+                                    TextColor="Black"
+                                    VerticalOptions="CenterAndExpand">
+                                   
+                                </Label>
+                                
+                            </StackLayout>
+                                 <yummy:PancakeView.GestureRecognizers>
+
+                                   <TapGestureRecognizer Command="{Binding GoToWordsCommand}"></TapGestureRecognizer>
+                             </yummy:PancakeView.GestureRecognizers>
+                        </yummy:PancakeView>
+                          <yummy:PancakeView IsVisible="{Binding Added}"
+                              Grid.Row="0"
+                            Grid.Column="1"
+                            Padding="10"
+                            BackgroundColor="White"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                            <StackLayout>
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="18"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    Text="Add today`s words"
+                                    TextColor="Black"
+                                    VerticalOptions="CenterAndExpand" >
+                                   
+                                </Label>
+                            </StackLayout>
+                                <yummy:PancakeView.GestureRecognizers>
+
+                                   <TapGestureRecognizer Command="{Binding GoToAddCommand}"></TapGestureRecognizer>
+                             </yummy:PancakeView.GestureRecognizers>
+                        </yummy:PancakeView>
+
+                          <yummy:PancakeView
+                              Grid.Row="1"
+                            Grid.Column="0"
+                            Padding="10"
+                            BackgroundColor="White"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                            <StackLayout>
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="18"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    Text="Random handred words"
+                                    TextColor="Black"
+                                    VerticalOptions="CenterAndExpand" >
+                                   
+                                </Label>
+                            </StackLayout>
+
+                                <yummy:PancakeView.GestureRecognizers>
+
+                                   <TapGestureRecognizer Command="{Binding GoToRandCommand}"></TapGestureRecognizer>
+                             </yummy:PancakeView.GestureRecognizers>
+                        </yummy:PancakeView>
+
+  
+                    </Grid>
+                <Label Grid.Row="2" Text="Archives" FontSize="32" FontAttributes="Bold" TextColor="Black"/>
+
+
+                <CollectionView Margin="0,5,0,0"  VerticalOptions="Center" SelectionMode="None"
+                                ItemsLayout="VerticalGrid, 2"
+                    HorizontalOptions="CenterAndExpand" ItemsSource="{Binding Years}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                              <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Frame HeightRequest="120" Padding="10"
+                            BackgroundColor="White"
+                           BorderColor="Black"
+                            CornerRadius="15"
+                                   x:DataType="model:Year">
+
+                        <Label HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
+                               Text="{Binding YearOld}" TextColor="Black" FontSize="18" />
+
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer NumberOfTapsRequired="1"
+                                                          Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:MainViewModel}}, Path=YearTapped}"
+                                                          CommandParameter="{Binding .}"/>
+                        
+                                </Frame.GestureRecognizers>
+
+                                 </Frame>
+                            </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+                     
+
+                      
+
+                  <!--   <Label FontSize="30" Margin="0,-25,0,10" TextColor="Black" FontAttributes="Italic" Text="Today words"/>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button CornerRadius="15" Text="{Binding HideUkrText}" Command="{Binding OnHideUkr}" HorizontalOptions="Start" BackgroundColor="Yellow" TextColor="Black" />
+                    <Button CornerRadius="15" Text="{Binding HideEnText}" Command="{Binding OnHideEn}" HorizontalOptions="Start" BackgroundColor="Blue" TextColor="White"/>
+
+
+                    </StackLayout>
+
+
+
+
+
+                   <CollectionView Grid.Row="2"  x:DataType="local:MainViewModel" IsVisible="{Binding NotAdded}"  Margin="20,0,0,0" ItemsLayout="VerticalGrid,1"
+                 VerticalOptions="Center" HorizontalOptions="CenterAndExpand" x:Name="WordsList" ItemsSource="{Binding TodayWords}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="300"/>
+              
+            </Grid.ColumnDefinitions>
+                        <Frame x:DataType="model:Word" HeightRequest="25" CornerRadius="10" BackgroundColor="Black">
+
+                                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Orientation="Horizontal">
+                                <Label  Text="{Binding InEnglish}" TextColor="Blue" FontSize="18"  HorizontalOptions="Center"/>
+                                <Label  HorizontalOptions="Center" TextColor="Yellow" Text="{Binding InUkrainian}" FontSize="18" />
+                              </StackLayout>
+                            </Frame>
+                       </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>-->
+                     
+                </StackLayout>
+            </yummy:PancakeView>
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

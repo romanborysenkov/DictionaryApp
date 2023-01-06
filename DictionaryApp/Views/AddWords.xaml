@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DictionaryApp.Views.AddWords"
+     xmlns:viewmodels="clr-namespace:DictionaryApp.ViewModels"
+    x:DataType="viewmodels:AddViewModel"
+    xmlns:model="clr-namespace:DictionaryApp.Models"
+    BackgroundColor="Black"
+    xmlns:renderers="clr-namespace:DictionaryApp.Renderers" xmlns:converters="http://xamarin.com/schemas/2020/toolkit">
+
+
+      <ContentPage.BindingContext>
+        <viewmodels:AddViewModel/>
+    </ContentPage.BindingContext>
+
+   <StackLayout>
+
+       <Button TextColor="Black" Command="{Binding AddWordsCommand}" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="80" HeightRequest="50" Margin="10" Text="Add"/>
+ 
+
+         <CollectionView  WidthRequest="600" ItemsSource="{Binding NewWords}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                          <Frame  x:DataType="model:Word">
+                            <Grid>
+                               
+                              
+                                <StackLayout Orientation="Horizontal">
+                                <Entry BackgroundColor="Black" PlaceholderColor="WhiteSmoke" HeightRequest="50" Placeholder="In english" WidthRequest="170"  Text="{Binding InEnglish}" TextColor="White" FontSize="18"  HorizontalOptions="Center"/>
+                                <Entry BackgroundColor="White" PlaceholderColor="Gray" HeightRequest="50" Placeholder="in ukrainian" WidthRequest="170" Text="{Binding InUkrainian}" TextColor="Black"  FontSize="18"  HorizontalOptions="Center"/>
+                              </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+  </StackLayout>
+
+</ContentPage>
+

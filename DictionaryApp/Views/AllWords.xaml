@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:DictionaryApp.ViewModels"
+    x:DataType="viewmodels:AllViewModel"
+    xmlns:model="clr-namespace:DictionaryApp.Models"
+        xmlns:renderers="clr-namespace:DictionaryApp.Renderers" xmlns:converters="http://xamarin.com/schemas/2020/toolkit"
+
+    x:Class="DictionaryApp.Views.AllWords">
+
+      <ContentPage.BindingContext>
+        <viewmodels:AllViewModel/>
+    </ContentPage.BindingContext>
+
+    <RefreshView x:Name="refresh" x:DataType="viewmodels:AllViewModel" Command="{Binding GetWordsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+    <StackLayout>
+         <Frame BackgroundColor="White" Grid.Row="1" HasShadow="True" CornerRadius="10" Margin="20,10,20,0" Padding="0" HeightRequest="100" VerticalOptions="Start">
+           
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+                      <SearchBar Text="{Binding SearchString}"
+                          x:Name="searchBar"  Placeholder="Search" FontSize="24" Margin="-10,0,-5,0" WidthRequest="390"
+                                 BackgroundColor="White" TextColor="Black" />
+                </StackLayout>
+        </Frame>
+
+
+         <CollectionView Margin="45,10,0,0" ItemsLayout="VerticalGrid,1" VerticalOptions="Center"
+                    HorizontalOptions="CenterAndExpand" x:Name="WordsList" ItemsSource="{Binding Words}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                             <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions >
+                            <ColumnDefinition Width="300"/>
+              
+                        </Grid.ColumnDefinitions>
+
+                          <Frame HeightRequest="25" CornerRadius="10" BackgroundColor="Black" x:DataType="model:Word">
+                          
+                               
+                                
+                                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Orientation="Horizontal">
+                                <Label  Text="{Binding InEnglish}" TextColor="White" FontSize="18"  HorizontalOptions="Center"/>
+                                <Label HorizontalOptions="Center" TextColor="White" Text="{Binding InUkrainian}" FontSize="18" />
+                              </StackLayout>
+                          
+                        </Frame>
+                              </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+    </StackLayout>
+</RefreshView>
+
+</ContentPage>
+

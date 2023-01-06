@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/DictionaryApp.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/DictionaryApp.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/DictionaryApp.Android.csproj",
+        "projectName": "DictionaryApp.Android",
+        "projectPath": "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/DictionaryApp.Android.csproj",
+        "packagesPath": "/Users/romsyaborysenko/.nuget/packages/",
+        "outputPath": "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/romsyaborysenko/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid13.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid13.0": {
+            "projectReferences": {
+              "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp/DictionaryApp.csproj": {
+                "projectPath": "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp/DictionaryApp.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid13.0": {
+          "dependencies": {
+            "Xamarin.Android.Support.Compat": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2196, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp/DictionaryApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp/DictionaryApp.csproj",
+        "projectName": "DictionaryApp",
+        "projectPath": "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp/DictionaryApp.csproj",
+        "packagesPath": "/Users/romsyaborysenko/.nuget/packages/",
+        "outputPath": "/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/romsyaborysenko/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Xamarin.CommunityToolkit": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2196, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/Users/romsyaborysenko/Library/Caches/VisualStudio/17.0/MSBuild/18992_3/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

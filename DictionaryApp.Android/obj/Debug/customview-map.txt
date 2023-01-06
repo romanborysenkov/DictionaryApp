@@ -1,0 +1,55 @@
+@string/appbar_scrolling_view_behavior;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/rootlayout.xml
+adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/icon.xml
+adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/icon_round.xml
+alpha;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/anim/enterfromleft.xml
+alpha;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/anim/exittoleft.xml
+androidx.appcompat.widget.Toolbar;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/fallbacktoolbardonotuse.xml
+androidx.appcompat.widget.Toolbar;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/rootlayout.xml
+androidx.appcompat.widget.Toolbar;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/shellcontent.xml
+androidx.appcompat.widget.Toolbar;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/toolbar.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/rootlayout.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/shellcontent.xml
+attr;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/values/attrs.xml
+background;obj/Debug/res/mipmap-anydpi-v26/icon.xml
+background;obj/Debug/res/mipmap-anydpi-v26/icon_round.xml
+cache-path;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/55/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+color;obj/Debug/res/values/colors.xml
+com.google.android.material.appbar.AppBarLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/flyoutcontent.xml
+com.google.android.material.appbar.AppBarLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/rootlayout.xml
+com.google.android.material.appbar.AppBarLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/shellcontent.xml
+com.google.android.material.bottomnavigation.BottomNavigationView;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/bottomtablayout.xml
+com.google.android.material.tabs.TabLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/fallbacktabbardonotuse.xml
+com.google.android.material.tabs.TabLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/rootlayout.xml
+com.google.android.material.tabs.TabLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/tabbar.xml
+declare-styleable;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/values/attrs.xml
+domain;obj/Debug/res/xml/network_security_config.xml
+domain-config;obj/Debug/res/xml/network_security_config.xml
+external-cache-path;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/55/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+external-path;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/55/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj/Debug/res/mipmap-anydpi-v26/icon.xml
+foreground;obj/Debug/res/mipmap-anydpi-v26/icon_round.xml
+FrameLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/54/jl/res/layout/camerafragment.xml
+FrameLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/bottomtablayout.xml
+item;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/values/styles.xml
+LinearLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/bottomtablayout.xml
+network-security-config;obj/Debug/res/xml/network_security_config.xml
+paths;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/55/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+resources;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/values/attrs.xml
+resources;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/values/strings.xml
+resources;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/values/styles.xml
+resources;obj/Debug/res/values/colors.xml
+resources;obj/Debug/res/values/styles.xml
+set;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/anim/enterfromleft.xml
+set;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/anim/enterfromright.xml
+set;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/anim/exittoleft.xml
+set;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/anim/exittoright.xml
+string;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/values/strings.xml
+style;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/values/styles.xml
+style;obj/Debug/res/values/styles.xml
+translate;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/anim/enterfromleft.xml
+translate;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/anim/enterfromright.xml
+translate;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/anim/exittoleft.xml
+translate;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/anim/exittoright.xml
+xamarin.communitytoolkit.ui.views.AutoFitTextureView;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/54/jl/res/layout/camerafragment.xml
+xamarin.forms.platform.android.appcompat.FormsViewPager;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/rootlayout.xml
+xamarin.forms.platform.android.ShellFlyoutLayout;/Users/romsyaborysenko/Documents/programming/NET/asp.net core/English/DictionaryApp/DictionaryApp.Android/obj/Debug/lp/57/jl/res/layout/flyoutcontent.xml

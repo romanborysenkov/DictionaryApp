@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      xmlns:viewmodels="clr-namespace:DictionaryApp.ViewModels"
+    x:DataType="viewmodels:RandomViewModel"
+    xmlns:model="clr-namespace:DictionaryApp.Models"
+    x:Class="DictionaryApp.Views.RandomPage"
+    xmlns:renderers="clr-namespace:DictionaryApp.Renderers" xmlns:converters="http://xamarin.com/schemas/2020/toolkit">
+
+     <!-- <ContentPage.BindingContext>
+        <viewmodels:RandomViewModel/>
+    </ContentPage.BindingContext>-->
+
+    <RefreshView x:Name="refresh" x:DataType="viewmodels:RandomViewModel" Command="{Binding GetWordsCommnad}">
+    <StackLayout>
+
+               <Button TextColor="White" Command="{Binding CheckCommand}" BackgroundColor="Black"
+                       HorizontalOptions="Start" WidthRequest="80" HeightRequest="50" Margin="10" Text="Check"/>
+
+
+
+        <StackLayout Orientation="Horizontal">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*"/>
+                  <ColumnDefinition Width="*"/>
+
+              </Grid.ColumnDefinitions>
+
+      
+         <CollectionView Grid.Column="0" ItemsSource="{Binding RandomWords}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                      
+                        <Frame x:DataType="model:Word">
+                            <Grid>
+                               
+                                <BoxView HeightRequest="40" BackgroundColor="#A0A4C9" Opacity="0.2"/>
+                                <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding InEnglish}" TextColor="Black" FontSize="18" VerticalOptions="CenterAndExpand"  HorizontalOptions="Center"/>
+                              
+                              </StackLayout>
+                            </Grid>
+                        </Frame>
+
+                      
+                        
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+             <CollectionView Grid.Column="1" ItemsSource="{Binding InputWords}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                      
+                          <Frame x:DataType="model:Word">
+                               <Grid>
+                                 <BoxView HeightRequest="40" BackgroundColor="#A0A4C9" Opacity="0.2"/>
+                                <Entry HeightRequest="40" WidthRequest="300" Text="{Binding InUkrainian}" TextColor="Black" FontSize="18"  HorizontalOptions="Center"/>
+                              </Grid>
+                        </Frame>
+                      
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+                  </Grid>
+        </StackLayout>
+    </StackLayout>
+</RefreshView>
+   
+</ContentPage>
+
